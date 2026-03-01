@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+  schedule:
+    # 11:40 AM CST (UTC-6) = 17:40 UTC
+    - cron: "40 17 * * *"
 
 jobs:
   cucumber-playwright:
