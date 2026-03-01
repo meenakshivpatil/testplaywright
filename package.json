@@ -1,1 +1,17 @@
-{\n  "scripts": {\n    "test": "npx playwright test",\n    "test:headed": "npx playwright test --headed",\n    "pw:install": "npx playwright install"\n  },\n  "devDependencies": {\n    "@cucumber/cucumber": "^7.0.0",\n    "@playwright/test": "^1.0.0",\n    "ts-node": "^10.0.0",\n    "typescript": "^4.0.0"\n  }\n}
+{
+  "name": "testplaywright",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "cucumber-js --config cucumber.json",
+    "test:headed": "cucumber-js --config cucumber.json --world-parameters '{\"headless\":false}'",
+    "pw:install": "playwright install --with-deps"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.52.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

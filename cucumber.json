@@ -1,0 +1,9 @@
+{
+  "default": {
+    "paths": ["tests/support/features/**/*.feature"],
+    "requireModule": ["ts-node/register"],
+    "require": ["tests/support/world.ts", "tests/support/hooks.ts", "tests/steps/**/*.ts"],
+    "format": ["progress"],
+    "parallel": 0
+  }
+}
