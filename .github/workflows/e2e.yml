@@ -4,11 +4,11 @@ on:
   push:
   pull_request:
   workflow_dispatch:
-  schedule:
+  #schedule:
     # 11:40 AM CST (UTC-6) = 17:40 UTC
     # cron: "40 17 * * *"   --> runs at 17 40 which is 11.40 CTC
     # "*/5 * * * *"  every 5 mins
-    - cron: "*/30 * * * *"
+    #- cron: "*/30 * * * *"
 
 jobs:
   cucumber-playwright:
